@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    height: 60px;
+}
+
+.header a {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 9;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.menuholder {
+    margin-left: auto;
+    display: flex;
+    height: 60px;
+    width: fit-content;
+    align-items: center;
+}
+
+.aholder {
+    height: min-content;
+}
+
+.imageholder {
+    height: min-content;
+    width: min-content;
+    display: flex;
+}
+
+
+.menuicon {
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuicon img {
+    width: 32px;
+    height: 32px;
+}
+
+.profileicon {
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileicon img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.menuicon:hover {
+    cursor: pointer;
+    background-color: rgba(139, 139, 139, 0.329);
+}
+
+.profileicon:hover {
+    cursor: pointer;
+    background-color: rgba(139, 139, 139, 0.329);
+}
+
+
+/*PROFILE MENU*/
+
+.profilemenu {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 380px;
+    padding: 1px;
+    background-color: #F3F6FC;
+    height: 300px;
+    border-radius: 32px;
+    box-shadow: 1px 1px 10px rgb(97, 97, 97);
+    overflow: hidden;
+}
+
+.account {
+    width: auto;
+    height: 140px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 7px 7px 0px 7px;
+    background-color: #fff;
+}
+
+.top {
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+.top img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.top p {
+    margin: 3px;
+}
+
+.dataholder {
+    margin-left: 20px;
+}
+
+#emailadress {
+    font-size: 15px;
+}
+
+.bottom {
+    height: 50px;
+}
+
+.bottom button {
+    margin-left: 110px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bottom button:hover {
+    cursor: pointer;
+    background-color: rgba(139, 139, 139, 0.329);
+}
+
+.account2 {
+    background-color: #fff;
+    width: auto;
+    margin: 3px 7px 0px 7px;
+    padding: 1px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.account2 img {
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.account2:hover {
+    cursor: pointer;
+    background-color: #E2EBF9;
+}
+
+.logout {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.logout:hover {
+    cursor: pointer;
+    background-color: #E2EBF9;
+}
+
+.logout img {
+    margin-left: 33px;
+    margin-right: 13px;
+    width: 30px;
+    height: 30px;
+}
+
+.menufooter {
+    width: auto;
+    margin-top: 5px;
+    padding: 8px;
+    border-top: 1px solid rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menufooter a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.menufooter a:hover {
+    background-color: #E2EBF9;
+}
+
+
+/*MIDDLE OF THE PAGE*/
+
+.middlepage {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainlogo {
+    margin-bottom: 10px;
+}
+
+.bar {
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+}
+
+.bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.searchbar {
+    height: 45px;
+    border: none;
+    width: 515px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-left: 2px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.voice {
+    height: 20px;
+    margin-top: 15px;
+}
+
+.buttonholder button {
+    background-color: #F8F9FA;
+    border: 1px solid #ffffff00;
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 7px;
+}
+
+.buttonholder button:hover {
+    border: 1px solid #DADCE0;
+}
+
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+footer div {
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+footer a {
+    color: #70757A;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer1 a {
+    margin-left: 20px;
+}
+
+.footer2 a {
+    margin-right: 20px;
+}
+
+.footer2 {
+    margin-left: auto;
+}

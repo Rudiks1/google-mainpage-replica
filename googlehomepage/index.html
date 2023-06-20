@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="header"> <!--HEADER-->
+        <div class="menuholder">
+            <div class="aholder">
+                <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+            </div>
+            <div class="imageholder">
+                <div class="menuicon" title="Google apps"><img src="IMG/menulogo.png"></div>
+                <div class="profileicon" id="profileicon" title="Google Account"><img src="IMG/profile.png"
+                        alt="Profile Picture"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profilemenu" id="profilemenu"> <!--PROFILEMENU-->
+        <div class="account">
+
+            <div class="top">
+                <img src="IMG/profile.png" alt="Profile Picture">
+                <div class="dataholder">
+                    <p id="name">Example Name</p>
+                    <p id="emailadress">examplename@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <a href="https://myaccount.google.com/?hl=en"><button type="button">Manage your Google
+                        Account</button></a>
+            </div>
+        </div>
+
+        <div class="account2">
+            <img src="IMG/addacc.png" alt="">
+            <p>Add another account</p>
+        </div>
+
+        <div class="logout">
+            <img src="IMG/logout.png" alt="">
+            <p>Sign out</p>
+        </div>
+
+        <div class="menufooter">
+            <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a>
+            <span> • </span>
+            <a href="https://policies.google.com/terms?hl=en">Terms of Service</a>
+        </div>
+
+    </div>
+
+    <div class="middlepage">
+
+        <img id="mainlogo" src="IMG/googlelogo.png" alt="Google"> <!--GOOGLE LOGO-->
+
+        <div class="bar"> <!--SEARCHBAR-->
+            <input class="searchbar" type="text" title="Search">
+            <img class="voice" src="IMG/mic.png">
+        </div>
+
+        <div class="buttonholder"> <!--BUTTONS-->
+            <button type="button">Google Search</button>
+            <a href="https://www.google.com/doodles"><button type="button">I'm Feeling Lucky</button></a>
+        </div>
+
+    </div>
+
+    <footer> <!--FOOTER-->
+        <div class="footer1"> <!--RIGHT SIDE-->
+            <a
+                href="https://about.google/?utm_source=google-HU&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+            <a
+                href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a
+                href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works </a>
+        </div>
+
+        <div class="footer2"> <!--LEFT SIDE-->
+            <a href="https://policies.google.com/privacy?hl=en">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en">Terms</a>
+            <a href="">Settings</a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var imageHolder = document.getElementById("profileicon");
+    var profileMenu = document.getElementById("profilemenu");
+
+    profileMenu.style.display = "none";
+
+    imageHolder.addEventListener("click", function () {
+        if (profileMenu.style.display === "none") {
+            profileMenu.style.display = "block";
+        } else {
+            profileMenu.style.display = "none";
+        }
+    });
+</script>
+
+</html>
