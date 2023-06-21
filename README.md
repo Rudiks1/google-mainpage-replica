@@ -8,3 +8,4 @@
 <hr>
 <img src="https://raw.githubusercontent.com/Rudiks1/google-mainpage-replica/main/preview/preview1.png">
 <img src="https://raw.githubusercontent.com/Rudiks1/google-mainpage-replica/main/preview/preview2.png">
+<img src="https://raw.githubusercontent.com/Rudiks1/google-mainpage-replica/main/preview/preview3.png">
