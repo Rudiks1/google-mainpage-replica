@@ -18,7 +18,7 @@
                 <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
             </div>
             <div class="imageholder">
-                <div class="menuicon" title="Google apps"><img src="IMG/menulogo.png"></div>
+                <div class="menuicon" id="menuicon" title="Google apps"><img src="IMG/menulogo.png"></div>
                 <div class="profileicon" id="profileicon" title="Google Account"><img src="IMG/profile.png"
                         alt="Profile Picture"></div>
             </div>
@@ -26,7 +26,7 @@
     </div>
 
 
-    <div class="profilemenu" id="profilemenu"> <!--PROFILEMENU-->
+    <div class="profilemenu" id="profilemenu"> <!--PROFILE MENU-->
         <div class="account">
 
             <div class="top">
@@ -58,8 +58,22 @@
             <span> • </span>
             <a href="https://policies.google.com/terms?hl=en">Terms of Service</a>
         </div>
-
     </div>
+
+    <div class="appsmenu" id="appsmenu"> <!--APPS MENU-->
+        <div class="appholder">
+            <div><img src="IMG/profile.png" style="border-radius: 50%">Account</div>
+            <div><img src="IMG/search.png">Search</div>
+            <div><img src="IMG/maps.png">Maps</div>
+            <div><img src="IMG/drive.png">Drive</div>
+            <div><img src="IMG/play.png">Play</div>
+            <div><img src="IMG/calendar.png">Calendar</div>
+            <div><img src="IMG/gmail.png">Gmail</div>
+            <div><img src="IMG/meet.png">Meet</div>
+            <div><img src="IMG/photos.png">Photos</div>
+        </div>
+    </div>
+
 
     <div class="middlepage">
 
@@ -96,17 +110,35 @@
     </footer>
 </body>
 
+
+<!--PROFILE MENU/APPS MENU OPEN-CLOSE-->
+
 <script>
-    var imageHolder = document.getElementById("profileicon");
-    var profileMenu = document.getElementById("profilemenu");
+    var profileIcon = document.getElementById("profileicon"); //Profile icon
+    var profileMenu = document.getElementById("profilemenu"); //Profile menu
+    var appsIcon = document.getElementById("menuicon"); //Apps icon
+    var appsMenu = document.getElementById("appsmenu"); //Apps menu
 
-    profileMenu.style.display = "none";
+    profileMenu.style.display = "none"; //Be hidden by default
+    appsMenu.style.display = "none";
 
-    imageHolder.addEventListener("click", function () {
+    profileIcon.addEventListener("click", function () { //Profile menu
         if (profileMenu.style.display === "none") {
-            profileMenu.style.display = "block";
-        } else {
+            appsMenu.style.display = "none"; //Close apps menu
+            profileMenu.style.display = "block"; //Open profile menu
+        }
+        else {
             profileMenu.style.display = "none";
+        }
+    });
+
+    appsIcon.addEventListener("click", function () { //Apps menu
+        if (appsMenu.style.display === "none") {
+            profileMenu.style.display = "none"; //Profile menu
+            appsMenu.style.display = "block"; //Open apps menu
+        }
+        else {
+            appsMenu.style.display = "none";
         }
     });
 </script>
